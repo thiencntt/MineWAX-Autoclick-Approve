@@ -1,5 +1,5 @@
 {
-    "name": "MineWAX tools",
+    "name": "MineWAX tools v1.1",
     "version": "1.1",
     "description": "Auto Approve and Login Google for WAX game, open popup in tab",
     "permissions": [ "tabs", "storage" ],
