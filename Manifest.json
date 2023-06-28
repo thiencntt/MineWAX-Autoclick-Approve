@@ -1,0 +1,37 @@
+{
+    "name": "MineWAX tools",
+    "version": "1.1",
+    "description": "Auto Approve and Login Google for WAX game, open popup in tab",
+    "permissions": [ "tabs", "storage" ],
+    "manifest_version": 3,
+    "short_name": "ToolsMineWAX",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCCqE1C73vPjt2B5lY89B2iUu5TO05UZDk0eJfdzQ+ZSmJyj0iCmJUNlvp/L0OqGlXmqifEbTo6fv+VLQHlroJ+npxaRGmtnuVssV0iQ57hzDeLmWjjxqSQfwZdmoCePi2/EaEfw5GfsKbTjayoiIPbSrUqcXOtAZWtE7NqCF3ZowIDAQAB",
+    "icons": {
+        "16": "icon/icon16.png",
+        "128": "icon/icon128.png",
+        "48": "icon/icon48.png"
+    },
+    "background": {
+        "service_worker": "UseOneWindow.js"
+    },
+    "action": {
+        "default_icon": "icon/icon48.png",
+        "default_popup": "popup.html",
+        "default_title": "Open link in same tab, pop-up as tab"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "http://*/*", "https://*/*" ],
+            "js": [ "OpenInTheSameTab.js" ]
+        },
+		{
+            "matches": [ "https://all-access.wax.io/*", "https://mycloudwallet.com/*", "https://www.mycloudwallet.com/*" ],
+            "js": [ "approve.js" ]
+        },
+	    {
+            "matches": [ "https://minewax.com/*" ],
+            "js": [ "reload.js" ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><title>MineWAX Tools Extension Options</title>
+<style type="text/css"> 
+p {width:390px;}
+#status {background-color: green; color: white;}
+</style>
+</head>
+<body>
+
+<p>
+<label>
+  <input type="checkbox" id="cb_t1pop">
+  Open pop-ups as a new tabs (Chrome extensions are not blocked)
+</label>
+<br />
+<label>
+  <input type="checkbox" id="cb_t1foc">
+  Give new tabs focus
+</label>
+<br />
+<label>
+  <input type="checkbox" id="cb_t1tab">
+  "Reuse tab" - open links (except pop-ups) in a current tab instead of a new tab. Please refresh the page(s) if you have changed this option!
+</label>
+<br />
+<label>
+  <input type="checkbox" id="cb_reload">
+  Enable reload every 30 minutes
+</label>
+<br />
+<label>
+  <input type="checkbox" id="autoapprove" checked disabled>
+  Auto click Approve in mycloudwallet.com
+</label>
+</p>
+<p>
+New features coming soon:
+<ul>
+<li>Whitelisting</li>
+<li>Mute new tabs</li>
+</ul>
+</p>
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=dleviet@live.com" target="_newtab">Please consider donation to support development</a></p>
+
+<script src="popup.js"></script>
+</body>
+</html>
