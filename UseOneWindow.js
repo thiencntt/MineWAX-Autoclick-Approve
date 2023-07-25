@@ -1,5 +1,5 @@
 // background script
-// https://stackoverflow.com/questions/54547939/can-i-open-a-link-in-targeted-specific-browser-tab
+
 // get settings
 chrome.storage.sync.get({
 	// default value
