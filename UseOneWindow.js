@@ -4,7 +4,7 @@
 chrome.storage.sync.get({
 	// default value
 	t1pop: true,
-	t1foc: false
+	t1foc: true
 }, function(items) {
 	t1pop = items.t1pop;
 	t1foc = items.t1foc;

@@ -32,6 +32,10 @@
 	    {
             "matches": [ "https://minewax.com/*" ],
             "js": [ "reload.js" ]
+        },
+	    {
+            "matches": [ "https://dungeon.wombat.app/*" ],
+            "js": [ "dungeon.js" ]
         }
     ]
 }

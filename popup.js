@@ -24,7 +24,7 @@ window.onload = function restore_options() {
   chrome.storage.sync.get({
     // default values
 	t1pop: true,
-	t1foc: false,
+	t1foc: true,
   t1tab: false,
   t1rel: true
   }, function(items) {
